@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size-16: 16px;
+  --font-size-26: 26px;
+  --color-white: white;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  width: 1440px;
+}
+
+.header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.header__left-side_width_401 {
+  width: 401px;
+  padding-left: 43px;
+}
+
+.left-side__uppercase {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+}
+
+.header__menu_list-style-type_none {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 512px;
+  margin-left: 184px;
+}
+
+.menu__link_color_7B1F1F {
+  color: #7b1f1f;
+}
+
+.menu__link_text-decoration_none {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: var(--font-size-16);
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: black;
+}
+
+.header__right-side {
+  margin-left: 119px;
+}
+
+.menu__link_color_7B1F1F {
+  color: #7b1f1f;
+  font-weight: 700;
+}
+
+.header__icon {
+  height: 24px;
+  width: 24px;
+  background-image: url(/images/header-icon.svg);
+  display: none;
+}
+
+.header__right-side {
+  display: flex;
+  align-items: center;
+}
+
+.right-side__link_text-transform_uppercase {
+  text-transform: uppercase;
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size-16);
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.right-side__link_padding-left_48 {
+  padding-left: 48px;
+}
+
+.right-side__link_padding-left_48::before {
+  content: ' ';
+  background: url(/images/bag-icon.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.hero_position_relative {
+  position: relative;
+  width: 1440px;
+  height: 823px;
+  background-image: url(/images/hero-img.jpg);
+}
+
+.hero__small-description {
+  position: absolute;
+  z-index: 1;
+  width: 577px;
+  height: 328px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: -4px 4px 20px rgba(68, 33, 33, 0.25);
+  top: 267px;
+  right: 122px;
+}
+
+.small-description__main-part_text-transform_uppercase {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 56px 130px 0 62px;
+  /* В гугл фонтс отсутствовал фонт 500 */
+}
+
+.small-description__secondary-part {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #000000;
+  padding: 34px 160px 0 62px;
+}
+
+.container {
+  display: grid;
+  gap: 28px;
+  margin: 107px 0 0 231px;
+  grid-template-columns: 21.8% 8.5% 9.2% 22%;
+  /* сделал сначала в пикселях, но на митапе Айканыш сказала,
+  что лучше делать в процентах */
+  grid-template-rows: 35% 23.9% 20%;
+  grid-template-areas:
+    'container__image-1 container__image-1 container__image-2 container__image-2'
+    'container__image-3 container__image-3 container__image-3 container__image-6'
+    'container__image-4 container__image-5 container__image-5 container__image-6';
+}
+
+.container__block_position_relative {
+  position: relative;
+}
+
+.container__image-1 {
+  grid-area: container__image-1;
+  width: 395px;
+  height: 306px;
+  background-image: url(/images/main-img-1.jpg);
+}
+
+.container__image-2 {
+  grid-area: container__image-2;
+  width: 580px;
+  height: 306px;
+  background-image: url(/images/main-img-2.jpg);
+}
+
+.container__image-3 {
+  grid-area: container__image-3;
+  width: 535px;
+  height: 210px;
+  background-image: url(/images/main-img-3.jpg);
+}
+
+.container__image-4 {
+  grid-area: container__image-4;
+  width: 264px;
+  height: 300px;
+  background-image: url(/images/main-img-4.jpg);
+}
+
+.container__image-5 {
+  grid-area: container__image-5;
+  width: 243px;
+  height: 300px;
+  background-image: url(/images/main-img-5.jpg);
+}
+
+.container__image-6 {
+  grid-area: container__image-6;
+  width: 440px;
+  height: 538px;
+  background-image: url(/images/main-img-6.jpg);
+}
+
+.footer {
+  background: #e7e9ed;
+  height: 306px;
+  margin-top: 103px;
+  text-align: center;
+}
+
+.footer__info_text-transform_uppercase {
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 28px;
+  padding-top: 67px;
+}
+
+.footer__number {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 19px;
+}
+
+.footer__address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-top: 19px;
+}
+
+.footer__policy {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: #919294;
+  margin-top: 38px;
+}
+
+.images-description {
+  color: var(--color-white);
+  font-size: var(--font-size-26);
+  font-style: normal;
+  font-weight: bold;
+  line-height: 31px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30px;
+  left: 43px;
+}

@@ -1,0 +1,99 @@
+@media (max-width: 576px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__right-side {
+    display: none;
+  }
+
+  .header__left-side {
+    padding: 18px 0 20px 20px;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .header__icon {
+    display: flex;
+    align-self: center;
+    margin-right: 31px;
+  }
+
+  .container__block_position_relative {
+    width: 341px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .container__image_background-position_center {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 23px;
+    background-position: center;
+  }
+
+  .hero_backhround-position-center {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero {
+    width: 375px;
+    height: 672px;
+    margin: 0 auto;
+  }
+
+  .hero__small-description {
+    width: 332px;
+    height: 379px;
+    top: 107px;
+    left: 22px;
+  }
+
+  .small-description__main-part {
+    font-size: 28px;
+    padding-left: 35px;
+    padding-right: 10px;
+  }
+
+  .small-description__secondary-part {
+    font-size: 16px;
+    width: 261px;
+    height: 96px;
+    padding-left: 35px;
+    padding-right: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .header,
+  .footer,
+  .container {
+    width: 375px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    margin-top: 65px;
+  }
+
+  .container__image-1 {
+    margin-top: 38px;
+  }
+}
+
+/* Адаптивка у меня достаточно коряво получается на данный момент :)
+Не разобрался как правильно настроить переносы текста в адаптивной версии
+И я множество раз переделывал те или иные моменты, так что извиняюсь,
+если в работе беспорядок */
